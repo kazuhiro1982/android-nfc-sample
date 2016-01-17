@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView_record_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/record_title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:id="@+id/tableLayout_record"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView_record_table"
+        android:stretchColumns="1,2"
+        android:layout_marginTop="16dp" >
+
+        <TableRow
+            android:id="@+id/tableRow_record_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000">
+            <TextView
+                style="@style/record_header"
+                android:text="@string/record_date"/>
+            <TextView
+                style="@style/record_header"
+                android:text="@string/record_start"/>
+            <TextView
+                style="@style/record_header"
+                android:text="@string/record_end"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

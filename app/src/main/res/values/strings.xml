@@ -1,0 +1,52 @@
+<resources>
+    <!-- ラベル -->
+    <string name="app_name">勤怠管理</string>
+    <string name="beam_config">NFC設定</string>
+    <string name="mail_config">メール設定</string>
+    <string name="nfc_init">登録タグの初期化</string>
+    <string name="tag_writer">タグの初期化</string>
+
+    <!-- NFC -->
+    <string name="message_nfc_not_supported">NFCがサポートされていません.</string>
+    <string name="message_nfc_disabled">NFCが有効になっていません.</string>
+    <string name="message_send_completed">送信完了しました.</string>
+
+    <!-- タグ読み込み -->
+    <string name="label_write_tag">NFCタグにこのアプリの情報を書き込みます。</string>
+    <string name="button_write_tag">書き込み</string>
+    <string name="message_tag_write_completed">書き込みが完了しました。</string>
+
+    <string name="title_tag_register">新しいタグを検出しました</string>
+    <string name="title_tag_init">登録タグの初期化</string>
+    <string name="message_tag_register">このタグを登録しますか？</string>
+    <string name="message_tag_init">現在登録されているタグを初期化しますか？</string>
+    <string name="message_tag_register_ok">OK</string>
+    <string name="message_tag_register_cancel">キャンセル</string>
+
+    <string name="tag_id_key">tag_id</string>
+    <string name="tag_preference_name">tag_preferences</string>
+
+    <!-- 勤怠 -->
+    <string name="label_check_in">おはよう！!</string>
+    <string name="button_check_in">出勤!</string>
+    <string name="button_check_out">退勤!</string>
+
+    <!-- 勤怠表 -->
+    <string name="record_title">今月の出勤表</string>
+    <string name="record_date">日付</string>
+    <string name="record_start">出勤時間</string>
+    <string name="record_end">退勤時間</string>
+
+    <style name="record_header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#ccc</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">1dip</item>
+        <item name="android:layout_marginLeft">1dip</item>
+        <item name="android:layout_marginRight">1dip</item>
+    </style>
+
+</resources>
