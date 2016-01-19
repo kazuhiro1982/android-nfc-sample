@@ -27,8 +27,8 @@ public class MainActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        TableLayout table = (TableLayout)getActivity().findViewById(R.id.tableLayout_record);
+        View v = inflater.inflate(R.layout.fragment_main, container, false);
+        TableLayout table = (TableLayout)v.findViewById(R.id.tableLayout_record);
         List<Record> records = new TimeRecorder(getActivity()).getRecordsOnThisMonth();
         for (Record record : records) {
             TableRow row = new TableRow(getActivity());
@@ -46,7 +46,7 @@ public class MainActivityFragment extends Fragment {
             table.addView(row);
         }
 
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return v;
     }
 
     private TextView createCell(String text) {
